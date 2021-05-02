@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scan To Share</title>
+  </head>
+  <body>
+    <strong>Scan the QR code to download the file:</strong><br />
+    <script>
+      fetch("code.png")
+        .then((response) => response.json())
+        .then(({ dataUrl, url }) => {
+          const image = document.createElement("img");
+          image.src = dataUrl;
+          document.body.append(image);
+        });
+    </script>
+  </body>
+</html>
