@@ -1,6 +1,6 @@
 {
   "name": "@johnny.reina/send",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Share files over LAN via QR code",
   "main": "src/index.js",
   "scripts": {
